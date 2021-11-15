@@ -17,7 +17,10 @@ Leheküljel on võimalik teha tellimus, mis teavitab rendileandjat, ning oleneva
 - Töövahendi tellimis taotlus
 - Enda kuulutuste haldamine
 
-## Wireframe
+## Wireframe:
+Visualiseeritud kujul:
+https://lucid.app/lucidchart/6fe68266-26b4-4689-8240-be3a1be791ca/edit?viewport_loc=73%2C37%2C984%2C706%2C0_0&invitationId=inv_6f8092e0-e4a2-44ad-8830-548e6556df0c
+
 
 ### 1.Avaleht
 
@@ -29,4 +32,4 @@ Leheküljel on võimalik teha tellimus, mis teavitab rendileandjat, ning oleneva
 
 ### 5.Tööriistade/-vahendite rentimiseks lisamine
 
-### 6.Tööriistade/-vahendite rentimise kinnitus
+### 6.Minu rent
