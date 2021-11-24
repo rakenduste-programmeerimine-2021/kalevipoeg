@@ -1,0 +1,27 @@
+.taskBar{
+    
+    display: flex;
+    flex-direction: row;
+
+    background-color: brown;
+    height: 3vh;
+
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+.taskButtons {
+    border: 1px solid black;
+}
+
+.button {
+
+}
+
+
+
+.logo {
+
+}
