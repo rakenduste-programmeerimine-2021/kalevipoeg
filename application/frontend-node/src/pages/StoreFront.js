@@ -1,6 +1,13 @@
+import Item from "../components/Item"
+
 function StoreFront () {
     return (
-        <h1>Renditootedete leht</h1>
+        <>
+            <div className="storefront-wrapper">
+                <h2>Rendikataloog</h2>
+                <Item/>
+            </div>
+        </>
     )
 }
 

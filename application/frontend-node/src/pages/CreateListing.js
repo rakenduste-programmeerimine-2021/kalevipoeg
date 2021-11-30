@@ -1,6 +1,8 @@
+import CreateItemForm from "../components/CreateItemForm"
+
 function CreateListing () {
     return (
-        <h1>Kuulutuse lisamise leht</h1>
+        <CreateItemForm></CreateItemForm>
     )
 }
 

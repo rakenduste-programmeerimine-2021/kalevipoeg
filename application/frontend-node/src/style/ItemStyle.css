@@ -1,0 +1,27 @@
+.item-wrapper {
+    border: 1px solid black;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    width: 25%;
+    height: 25%;
+
+    cursor:pointer;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.item-sub-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-data {
+    border: 1px solid blue;
+}

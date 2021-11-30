@@ -1,13 +1,17 @@
 import '../style/TaskbarStyle.css'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { Context } from "../rental";
+import '../style/LandingStyle.css'
 
+import { Button, ButtonGroup } from "@chakra-ui/react"
 
 function Taskbar () {
-    const [user, setUser] = useState(true);
+    const [state, dispatch] = useContext(Context);
 
-    if (!user) {
+    if (state.auth.token==null) {
         return (
+            
             <>
                 <div className="taskBar">
                     <div className="taskButtons">
@@ -30,7 +34,6 @@ function Taskbar () {
                         </Link>
                     </div>
                 </div>
-                <button onClick={() => setUser(!user)}>SetUser (test only)</button>
             </>
         )
     } else {
@@ -44,6 +47,7 @@ function Taskbar () {
                             </button>
                         </Link>
 
+                        <Button type="primary">Primary Button</Button>
                         <Link to="/rent">
                             <button className="button">
                                 Rendi
@@ -68,15 +72,11 @@ function Taskbar () {
                             </button>
                         </Link>
                     </div>
+                    <h3>Welcome, { state.auth.user }</h3>
                 </div>
-                <button onClick={() => setUser(!user)}>SetUser (test only)</button>
             </>
         )
     }
-
-    
-        
-    
 }
 
 export default Taskbar
