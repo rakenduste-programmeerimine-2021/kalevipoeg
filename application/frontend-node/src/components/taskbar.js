@@ -4,8 +4,6 @@ import { useContext } from 'react';
 import { Context } from "../rental";
 import '../style/LandingStyle.css'
 
-import { Button, ButtonGroup } from "@chakra-ui/react"
-
 function Taskbar () {
     const [state, dispatch] = useContext(Context);
 
@@ -47,7 +45,6 @@ function Taskbar () {
                             </button>
                         </Link>
 
-                        <Button type="primary">Primary Button</Button>
                         <Link to="/rent">
                             <button className="button">
                                 Rendi

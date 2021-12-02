@@ -1,8 +1,8 @@
 import { useContext, useState } from "react"
 import { Redirect } from "react-router";
-import { Context } from "../rental"
-import { logoutUser } from "../rental/actions"
-
+import { Context } from "../rental";
+import { logoutUser } from "../rental/actions";
+import Button from "@material-ui/core/Button";
 
 function MyRent () {
     const [state, dispatch] = useContext(Context);
@@ -24,7 +24,9 @@ function MyRent () {
 
                 :
 
-                <button onClick={userLogoutHandler}>Log out</button>
+                <Button color="secondary" onClick={userLogoutHandler} variant="outlined">
+            Log Out
+            </Button>
             }
             
             
