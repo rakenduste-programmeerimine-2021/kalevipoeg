@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "antd": "^4.17.1",
+    "bcryptjs": "^2.4.3",
     "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-combine-reducers": "^1.1.1",
