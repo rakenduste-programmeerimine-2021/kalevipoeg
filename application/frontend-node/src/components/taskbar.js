@@ -2,6 +2,13 @@ import '../style/TaskbarStyle.css'
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { Context } from "../rental";
+import * as React from 'react';
+import HomeIcon from '@mui/icons-material/Home';
+import LoginIcon from '@mui/icons-material/Login';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import PersonIcon from '@mui/icons-material/Person';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import '../style/LandingStyle.css'
 
 function Taskbar () {
@@ -14,21 +21,15 @@ function Taskbar () {
                 <div className="taskBar">
                     <div className="taskButtons">
                         <Link to="/">
-                            <button className="button">
-                                Home
-                            </button>
+                            <HomeIcon classname="taskbutton" />
                         </Link>
     
                         <Link to="/login">
-                            <button className="button">
-                                Login
-                            </button>
+                        <LoginIcon classname="taskbutton" />
                         </Link>
     
                         <Link to="/contact">
-                            <button className="button">
-                                Contact
-                            </button>
+                        <ContactPageIcon classname="taskbutton" />
                         </Link>
                     </div>
                 </div>
@@ -40,33 +41,23 @@ function Taskbar () {
                 <div className="taskBar">
                     <div className="taskButtons">
                         <Link to="/">
-                            <button className="button">
-                                Home
-                            </button>
+                        <HomeIcon classname="taskbutton" />
                         </Link>
 
                         <Link to="/rent">
-                            <button className="button">
-                                Rendi
-                            </button>
+                        <MenuBookIcon classname="taskbutton" />
                         </Link>
 
                         <Link to="/createlisting">
-                            <button className="button">
-                                Lisa 
-                            </button>
+                        <AddBoxIcon classname="taskbutton" />
                         </Link>
 
                         <Link to="/contact">
-                            <button className="button">
-                                Contact
-                            </button>
+                        <ContactPageIcon classname="taskbutton" />
                         </Link>
 
                         <Link to="/user">
-                            <button className="button">
-                                Minu Kasutaja
-                            </button>
+                           <PersonIcon  classname="taskbutton" />
                         </Link>
                     </div>
                     <h3>Welcome, { state.auth.user }</h3>

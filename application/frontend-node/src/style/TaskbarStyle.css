@@ -6,7 +6,7 @@
     flex-direction: row;
 
     background-color: purple;
-    height: 6vh;
+    height: 10vh;
 
     justify-content: space-around;
     align-items: center;
@@ -16,6 +16,7 @@
 
 .taskButtons {
     border: 1px solid black;
+    transform: scale(1.8);
 }
 
 .button {

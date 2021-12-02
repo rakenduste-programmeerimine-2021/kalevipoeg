@@ -2,7 +2,8 @@ import { useContext, useState } from "react"
 import { Redirect } from "react-router";
 import { Context } from "../rental";
 import { logoutUser } from "../rental/actions";
-import Button from "@material-ui/core/Button";
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
 function MyRent () {
     const [state, dispatch] = useContext(Context);

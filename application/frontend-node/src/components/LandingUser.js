@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
 
 function LandingUser () {
     return (
@@ -7,11 +8,15 @@ function LandingUser () {
                 <h2>Tööriistade ja -vahendite rentimine</h2>
                 <div className="sub-content-wrapper"> 
                     <Link to="/rent">
-                        <button className="button-outline">Rendi toode</button>
+                    <Button color="secondary" variant="outlined" >
+               Alusta rentimist
+            </Button>
                     </Link>
 
                     <Link to="/createlisting">
-                        <button className="button-outline">Lisa toode</button>
+                    <Button color="secondary" variant="outlined" >
+              Lisa Toode
+            </Button>
                     </Link>
                 </div>
             </div>
