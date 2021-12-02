@@ -3,9 +3,10 @@ import { authReducer } from "./reducers"
 import { createContext, useReducer } from "react";
 
 const initAuth = {
-    token: null,
-    user: null,
-    authenticated: false
+    id: null,
+    firstName: null,
+    lastName: null,
+    userName: null
 }
 
 const [combinedReducer, initialState] = combineReducers({

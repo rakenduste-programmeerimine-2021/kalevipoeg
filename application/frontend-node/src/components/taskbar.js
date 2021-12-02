@@ -14,7 +14,7 @@ import '../style/LandingStyle.css'
 function Taskbar () {
     const [state, dispatch] = useContext(Context);
 
-    if (state.auth.token==null) {
+    if (state.auth.userName==null) {
         return (
             
             <>
@@ -57,10 +57,10 @@ function Taskbar () {
                         </Link>
 
                         <Link to="/user">
-                           <PersonIcon  classname="taskbutton" />
+                            <PersonIcon  classname="taskbutton" />
                         </Link>
                     </div>
-                    <h3>Welcome, { state.auth.user }</h3>
+                    <h3>Welcome, { state.auth.firstName + ' ' +  state.auth.lastName }</h3>
                 </div>
             </>
         )
