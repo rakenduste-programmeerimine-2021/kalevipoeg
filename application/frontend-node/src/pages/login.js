@@ -47,14 +47,14 @@ function Login () {
 
     return (
 
-        <Box
-            sx={{
-                height: 600,
-                display: 'flex',
-                margin: 'normal',
-                alignItems: 'center',
-                '& > :not(style)': { m: "auto" },
-            }}
+
+                    <Box
+        sx={{
+        height: 600,
+        display: 'flex',
+        alignItems: 'center',
+        '& > :not(style)': { m: "auto" },
+        }}
         >
 
         <TextField
