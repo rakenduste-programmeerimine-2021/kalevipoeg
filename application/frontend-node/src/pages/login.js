@@ -32,7 +32,6 @@ function Login () {
         sx={{
         height: 600,
         display: 'flex',
-        margin: 'normal',
         alignItems: 'center',
         '& > :not(style)': { m: "auto" },
       }}
