@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Taskbar from './components/taskbar';
+import Taskbar from './components/Taskbar';
 import LandingPage from './pages/LandingPage';
 import StoreFront from './pages/StoreFront';
 import CreateListing from './pages/CreateListing';
 import MyRent from './pages/MyRent';
-import Login from './pages/login';
+import Login from './pages/Login';
 import Register from './pages/Register';
 import Contact from './pages/Contact';
 

@@ -16,17 +16,12 @@ function MyRent () {
 
         <>
             {   !state.auth.userName ?
-
-                <Redirect to="/" />
-
+                    <Redirect to="/" />
                 :
-
-                <Button color="secondary" onClick={userLogoutHandler} variant="outlined">
-                    Log Out
-                </Button>
+                    <Button color="secondary" onClick={userLogoutHandler} variant="outlined">
+                        Log Out
+                    </Button>
             }
-            
-            
         </>
     )
 }
