@@ -4,14 +4,14 @@ const PORT = process.env.PORT || 3000
 const cors = require("cors")
 
 const authenticateRoute = require('./routes/authenticate')
-//const listingRoute = require('./routes/listing')
+const listingRoute = require('./routes/listing')
 
 const app = express()
 app.use(express.json())
 app.use(cors())
 
 app.use('/api/authenticate', authenticateRoute)
-//app.use('/api/listing', listingRoute)
+app.use('/api/listing', listingRoute)
 
 app.get("/", (req, res) => {
     res.send("This is backend!")

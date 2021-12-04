@@ -1,19 +1,19 @@
 import '../style/ItemStyle.css'
 
-function Item () {
+function Item (props) {
+
     return (
 
         <div className="item-wrapper">
             <div className="item-sub-wrapper">
-                <div className="img"></div>
+                <img src={props.image} id="itemImage" className="img"></img>
                 <div className="item-data">
-                    <h3>Redel</h3>
-                    <p>Kategooria</p>
-                    <p>60€</p>
-                    <p>Tallinn</p>
+                    <p className="item-title">{props.itemName}</p>
+                    <p className="item-par">{props.itemCategory}</p>
+                    <p className="item-par">{props.price}</p>
+                    <p className="item-par">{props.location}</p>
                 </div>
             </div>
-            
         </div>
 
     )
