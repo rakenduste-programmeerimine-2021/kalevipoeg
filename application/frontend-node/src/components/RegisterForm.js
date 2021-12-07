@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 
 function RegisterForm () {
     
-    const [state, dispatch] = useContext(Context);
+    const [state, dispatch] = useContext(Context)
     const [serverStatus, setServerStatus] = useState("")
 
     const [firstNameRef, setFirstNameRef] = useState("")

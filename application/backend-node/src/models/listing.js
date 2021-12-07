@@ -9,7 +9,7 @@ const listingSchema = new Schema ({
     availableFrom: { type: Date, required: true, default: Date.now },
     availableTo: { type: Date, required: true, default: Date.now },
     itemLocation: { type: String, required: true },
-    itemImage: { type: String, required: true },
+    itemImage: { type: String, required: true, default: "http://cdn.onlinewebfonts.com/svg/img_19667.png" },
     itemOwner: { type: String, required: true },
     dateCreated: { type: Date, default: Date.now }
 })

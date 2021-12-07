@@ -1,6 +1,12 @@
 .listed-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+
+    width: auto;
+    height: auto;
+
+    padding: 50px;
 }

@@ -25,7 +25,7 @@ function StoreFront () {
     }
 
     return (
-        <div className="listed-items">
+        <div >
             {   !state.auth.userName ?
                     <Redirect to="/" />
                 :

@@ -10,8 +10,10 @@ function Listings (props) {
                     <Item
                         itemName={listing.itemName}
                         itemCategory={listing.itemCategory}
+                        itemDescription={listing.itemDescription}
                         price={listing.itemPrice}
                         location={listing.itemLocation}
+                        owner={listing.itemOwner}
                         image={listing.itemImage}
                     />
                 ))
