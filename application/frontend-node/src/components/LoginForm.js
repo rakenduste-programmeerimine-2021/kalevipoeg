@@ -17,7 +17,6 @@ function LoginForm () {
     const [activeUser, setActiveUser] = useState([])
 
     function userLoginHandler () {
-
         const loginCred = {
             userName: loginUsername,
             password: loginPassword
@@ -31,16 +30,16 @@ function LoginForm () {
                 'Content-type' : 'application/json'
             }
             
-        }).then(res =>  res.json().then(data => ({body: data}))).then(obj => 
+            
+        }).then(res =>  res.json().then(data => ({body: data}))).then(obj =>
             setActiveUser({
                 id: obj.body.loggedUser.id,
                 firstName: obj.body.loggedUser.firstName,
                 lastName: obj.body.loggedUser.lastName,
                 userName: obj.body.loggedUser.userName
-            }));
-
+            })
+        );
         dispatch(loginUser(activeUser))
-        
     }
 
     return(

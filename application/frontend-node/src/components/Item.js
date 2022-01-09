@@ -9,8 +9,38 @@ import PersonIcon from '@mui/icons-material/Person';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Item (props) {
-    
     const [itemOpen, setItemOpen] = useState(false)
+    const [available, setAvailable] = useState(props.availability)
+
+    function rentItem () {
+
+        let updatedListing
+
+        if (available) {
+            updatedListing = {
+                id: props.itemId,
+                itemAvailability: false
+            }
+            setAvailable(false)
+            setItemOpen(false)
+        } else {
+            alert('Viga! Toode juba välja renditud!')
+        }
+
+        console.log("Rented item: ", props.itemId)
+
+        fetch('http://localhost:8081/api/listing/update', {
+            
+            method: 'PUT',
+            body: JSON.stringify(updatedListing),
+            headers:{
+                'Content-type' : 'application/json'
+            }
+            
+        }).then(res =>  res.json()).then(msg => (alert(msg.message)))
+
+        //window.location.replace("/rent");
+    }
 
     return (
         <>
@@ -86,13 +116,12 @@ function Item (props) {
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>Selle divi sisse 2 date pickerit, from ja to</h2>
-                                    <Button color="secondary" variant="contained" >RENDI</Button>
+                                    <Button disabled={!available} color="secondary" variant="contained" onClick={rentItem}>RENDI</Button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
                     
             }
         </>

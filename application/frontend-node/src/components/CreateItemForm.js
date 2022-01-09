@@ -36,9 +36,7 @@ function CreateItemForm () {
                 'Content-type' : 'application/json'
             }
             
-        }).then(res =>  res.json().then(msg => (console.log(msg))))
-
-        //alert("Teie toode lisati edukalt! Teid viiakse tagasi rendilehele.")
+        }).then(res =>  res.json().then(msg => (console.log(msg.message))))
 
         window.location.replace("/rent");
     }
