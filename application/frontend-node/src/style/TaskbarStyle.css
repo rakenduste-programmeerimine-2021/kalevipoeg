@@ -12,12 +12,12 @@
     justify-content: space-around;
     align-items: center;
 
-    border: 1px solid black;
+    border: none;
     margin-bottom: 2%;
 }
 
 .taskButtons {
-    border: 1px solid black;
+    border: none;
     transform: scale(1.8);  
 }
 

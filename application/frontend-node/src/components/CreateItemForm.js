@@ -38,7 +38,7 @@ function CreateItemForm () {
             
         }).then(res =>  res.json().then(msg => (console.log(msg.message))))
 
-        window.location.replace("/rent");
+        //window.location.replace("/rent");
     }
 
 

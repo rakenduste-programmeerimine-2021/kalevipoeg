@@ -9,7 +9,7 @@
 }
 
 .content-wrapper {
-    border: 1px solid black;
+    border: none
 }
 
 .startrent{
@@ -17,7 +17,6 @@
 }
 
 .sub-content-wrapper {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
