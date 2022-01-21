@@ -1,0 +1,41 @@
+.Logimine {
+    display: flex;
+    flex-direction: column;
+        height: 400px;
+        width: 20%;
+        align-items: center;
+        margin-left: 40%;
+        margin-top: 5%;
+        border: 5px  black;
+        
+        
+}
+.LoginButton{
+    margin-top: 50%;
+    align-items: center;
+    width: 50%;
+
+    }
+
+    .RegisterButton{
+        margin-top: 10%;
+        align-items: center;
+        width: 50%;
+        }
+.submitbutton{
+    margin-top: 10%;
+    align-items: center;
+    width: 60%;
+    }
+
+#textarea{
+    margin-top: 10%;
+}
+
+.logout{
+    margin-top: 10%;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    
+}

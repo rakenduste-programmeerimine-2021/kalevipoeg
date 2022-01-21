@@ -18,7 +18,7 @@ function MyRent () {
             {   !state.auth.userName ?
                     <Redirect to="/" />
                 :
-                    <Button color="secondary" onClick={userLogoutHandler} variant="outlined">
+                    <Button color="secondary" onClick={userLogoutHandler} variant="outlined" className="logout">
                         Log Out
                     </Button>
             }

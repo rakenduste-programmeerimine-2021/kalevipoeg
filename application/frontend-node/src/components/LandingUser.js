@@ -7,13 +7,13 @@ function LandingUser () {
             <div className="content-wrapper">
                 <h2>Tööriistade ja -vahendite rentimine</h2>
                 <div className="sub-content-wrapper"> 
-                    <Link to="/rent">
+                    <Link to="/rent" >
                     <Button color="secondary" variant="outlined" >
                Alusta rentimist
             </Button>
                     </Link>
 
-                    <Link to="/createlisting">
+                    <Link to="/createlisting" className="startrent">
                     <Button color="secondary" variant="outlined" >
               Lisa Toode
             </Button>

@@ -1,15 +1,19 @@
 .home-wrapper {
-    border: 1px solid red;
     width: 98vw;
-    height: 95vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 150%;
 }
 
 .content-wrapper {
     border: 1px solid black;
+}
+
+.startrent{
+    margin-left: 5%;
 }
 
 .sub-content-wrapper {

@@ -54,12 +54,7 @@ function RegisterForm () {
 
     return(
         <Box
-            sx={{
-                height: 600,
-                display: 'flex',
-                alignItems: 'center',
-                '& > :not(style)': { m: "auto" },
-            }}
+        className="Logimine"
         >
             <TextField
                 helperText="Palun sisesta eesnimi"
@@ -71,6 +66,7 @@ function RegisterForm () {
                 helperText="Palun sisesta Perekonnanimi"
                 id="username"
                 label="Perekonnanimi"
+                type="n"
                 onChange={ e=>setLastNameRef(e.target.value) }
             />
             <TextField

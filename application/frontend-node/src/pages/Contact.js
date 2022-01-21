@@ -8,22 +8,23 @@ function Contact () {
     return (
      
         <Box
-        
+        className="Logimine"
       >
         <TextField
           helperText="Sisesta eesnimi"
           id="firstname"
           label="Eesnimi"
         />
-        <TextField id="secondname" label="Perekonnanimi" />
-        <TextField id="phonenumber" label="Telefoninumber" />
-        <TextField id="email" label="Email" />
+        <TextField id="secondname" label="Perekonnanimi" helperText="Sisesta perekonnanimi" />
+        <TextField id="phonenumber" label="Telefoninumber" helperText="Sisesta telefoninumber" />
+        <TextField id="email" label="Email" helperText="Sisesta email"/>
         <TextField
           id="textarea"
+          helperText="Sisesta probleem"
           label="Sisesta küsimus/probleem"
           variant="standard"
         />
-        <Button color="secondary" variant="outlined" >
+        <Button color="secondary" variant="outlined" className='LoginButton'  >
             Saada
         </Button>
       </Box>

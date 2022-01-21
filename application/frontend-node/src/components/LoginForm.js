@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Context } from "../rental";
 import { loginUser } from "../rental/actions";
 import { useContext, useState } from "react";
+import "../style/FormStyle.css";
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from "@mui/material/TextField";
@@ -44,13 +45,9 @@ function LoginForm () {
 
     return(
         <Box
-            sx={{
-            height: 600,
-            display: 'flex',
-            alignItems: 'center',
-            '& > :not(style)': { m: "auto" },
-            }}
+        className="Logimine"
         >
+           
             <TextField
                 helperText="Palun sisesta kasutajanimi"
                 id="username"
@@ -64,10 +61,10 @@ function LoginForm () {
                 type="password"
                 onChange={e => setLoginPassword(e.target.value)}
             />
-            <Button color="secondary" onClick={userLoginHandler} variant="outlined">
+            <Button color="secondary" onClick={userLoginHandler} variant="outlined" className='LoginButton' >
                     Logi Sisse
             </Button>
-            <Link to="/register">  
+            <Link to="/register" className='RegisterButton'>  
                 <Button color="secondary" variant="outlined" >
                     Registreerima
                 </Button>

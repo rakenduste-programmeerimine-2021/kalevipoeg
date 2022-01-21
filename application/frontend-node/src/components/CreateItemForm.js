@@ -44,33 +44,38 @@ function CreateItemForm () {
 
 
     return (
-        <Box>
+        <Box className="Logimine">
             <TextField
                 required="true"
                 label="Tootenimetus"
                 onChange={ e=>setTitleRef(e.target.value)}
+                helperText="Palun sisesta toode"
             />
             <TextField
                 required="true"
                 label="Kategooria"
                 onChange={ e=>setCategoryRef(e.target.value)}
+                helperText="Palun sisesta kategooria"
             />
             <TextField
                 required="true"
                 label="Kirjeldus"
                 onChange={ e=>setDescriptionRef(e.target.value)}
+                helperText="Palun sisesta toote kirjeldus"
             />
             <TextField
                 required="true"
                 label="Asukoht"
                 onChange={ e=>setLocationRef(e.target.value)}
+                helperText="Palun sisesta toote asukoht"
             />
             <TextField
                 required="true"
                 label="Hind"
                 onChange={ e=>setPriceRef(e.target.value)}
+                helperText="Palun sisesta toote hind"
             />
-            <Button color="secondary" variant="outlined" onClick={submitItem}>LISA</Button>
+            <Button color="secondary" variant="outlined" onClick={submitItem} className="submitbutton">LISA</Button>
         </Box>
     )
 }

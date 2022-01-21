@@ -8,23 +8,22 @@
     background-color: purple;
     height: 10vh;
 
+
     justify-content: space-around;
     align-items: center;
 
     border: 1px solid black;
+    margin-bottom: 2%;
 }
 
 .taskButtons {
     border: 1px solid black;
-    transform: scale(1.8);
+    transform: scale(1.8);  
 }
 
 .button {
     height: 90%;
+    margin-left: 20px;
 }
 
 
-
-.logo {
-
-}

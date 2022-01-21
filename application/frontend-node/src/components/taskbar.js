@@ -12,7 +12,7 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import '../style/LandingStyle.css'
 
 function Taskbar () {
-    const [state, dispatch] = useContext(Context);
+    const [state] = useContext(Context);
 
     if (state.auth.userName==null) {
         return (
