@@ -1,0 +1,52 @@
+.home-wrapper {
+    width: 98vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.content-wrapper {
+    border: none
+}
+
+.startrent{
+    margin-left: 5%;
+}
+
+.sub-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-outline {
+    height: 30px;
+    width: 80px;
+    margin: 25px;
+
+    background-color: white;
+    border: 2px solid rgb(80, 80, 233);
+    border-radius: 5px;
+
+    color: rgb(80, 80, 233);
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.button-outline:hover {
+    background-color: rgb(206, 206, 247);
+    color: rgb(61, 61, 230);
+    border: 2px solid rgb(80, 80, 233);
+}
+
+.button-outline:active {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(80, 80, 233);
+}

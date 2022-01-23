@@ -1,0 +1,29 @@
+@import '~antd/dist/antd.css';
+
+.taskBar{
+    
+    display: flex;
+    flex-direction: row;
+
+    background-color: purple;
+    height: 10vh;
+
+
+    justify-content: space-around;
+    align-items: center;
+
+    border: none;
+    margin-bottom: 2%;
+}
+
+.taskButtons {
+    border: none;
+    transform: scale(1.8);  
+}
+
+.button {
+    height: 90%;
+    margin-left: 20px;
+}
+
+
